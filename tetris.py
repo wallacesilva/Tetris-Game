@@ -1,9 +1,6 @@
 import pygame
 import random
 
-pygame.mixer.init()
-pygame.mixer.music.load('start.mp3')
-pygame.mixer.music.play()
 pygame.font.init()
 
 I = [['..0..',
@@ -374,10 +371,7 @@ def game():
             if event.type == pygame.QUIT:
                 run = False
             if event.type == pygame.KEYDOWN:
-                pygame.mixer.music.load('tetris.mp3')
-                pygame.mixer.music.play()
-                play()
-            
+                play()           
     pygame.quit()
     
 window = pygame.display.set_mode((w_width, w_height))
