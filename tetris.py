@@ -1,8 +1,8 @@
 import pygame
 import random
 pygame.mixer.init()
-pygame.mixer.music.load('')
-pygame.mixer.music.play()
+# pygame.mixer.music.load('')
+# pygame.mixer.music.play()
 pygame.font.init()
 
 I = [['..0..',
@@ -373,8 +373,8 @@ def game():
             if event.type == pygame.QUIT:
                 run = False
             if event.type == pygame.KEYDOWN:
-                pygame.mixer.music.load('')
-                pygame.mixer.music.play()
+                # pygame.mixer.music.load('')
+                # pygame.mixer.music.play()
                 play()           
     pygame.quit()
     
